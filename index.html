@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Task</title>
+    <style>
+        body, html {
+            color: rgb(57, 57, 192);
+        }
+        h1 {
+            text-align: center;
+        }
+        h1:not(#DANO) {
+            color: lightseagreen;
+        }
+        #DANO span {
+            color: rgb(216, 185, 9);
+        }
+        h3 {
+           color: #191919; 
+        }
+        h3 span {
+            color: rgb(223, 5, 5);
+        }
+        h4 {
+            font-size: 2em;
+            text-align: center;
+            color: #191919;
+        }
+        h2 {
+            color: rgb(251, 144, 162);
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+
+        }
+        h2 span {
+            color: lime;
+        }
+        h3 span {
+            color: crimson;
+        }
+        #quartiles {
+            color: rgb(117, 111, 17);
+        }
+        h4 {
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@10.0.2/lib/browser/math.min.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <h1>Exam Task</h1>
+    <h1 id="DANO">Мат Ожидание: <span> 1.5</span>, Дисперсия: <span> 0.72</span>, Количество: <span> 10</span></h1>
+    <h3></h3>
+    <h2 id="matOG">Оценка математического ожидания: </h2>
+    <h2 id="DISP">Оценка дисперсии: </h2>
+    <h2 id="MEDIANA">Медиана: </h2>
+    <h2 id="quartiles"></h2>
+    <h4>График плотности равномерного распределения</h4>
+    <div class="ct-chart" id="ravnPlotn"></div>
+    <h4>График функции равномерного распределения</h4>
+    <div class="ct-chart" id="ravnGraph"></div>
+    <h4>График плотности показательного распределения</h4>
+    <div class="ct-chart" id="pokazPlotn"></div>
+    <h4>График функции показательного распределения</h4>
+    <div class="ct-chart" id="pokazGraph"></div>
+</body>
+</html>
